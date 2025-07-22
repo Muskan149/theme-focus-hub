@@ -2,39 +2,58 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Healthcare VC Tool Design System
+Primary: Vibrant Orange (#FFA500)
+Secondary: Clean whites and light grays
+Font: Inter for professional, modern feel
 */
 
 @layer base {
   :root {
+    /* Healthcare VC Tool Color System */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Vibrant Orange Primary (#FFA500) */
+    --primary: 39 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 39 100% 45%;
+    --primary-light: 39 100% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Light Gray System */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 220 13% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 220 9% 46%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 20% 96%;
+    --accent-foreground: 220 13% 18%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Professional Grays */
+    --gray-50: 210 20% 98%;
+    --gray-100: 210 20% 96%;
+    --gray-200: 214 20% 92%;
+    --gray-300: 214 16% 87%;
+    --gray-400: 214 14% 73%;
+    --gray-500: 214 11% 58%;
+    --gray-600: 220 9% 46%;
+    --gray-700: 220 13% 36%;
+    --gray-800: 220 13% 28%;
+    --gray-900: 220 13% 18%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --destructive: 0 65% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 20% 92%;
+    --input: 214 20% 92%;
+    --ring: 39 100% 50%;
 
     --radius: 0.5rem;
 
@@ -56,33 +75,46 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 13% 18%;
+    --foreground: 210 20% 98%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 220 13% 22%;
+    --card-foreground: 210 20% 98%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 220 13% 22%;
+    --popover-foreground: 210 20% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 39 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 39 100% 45%;
+    --primary-light: 39 50% 20%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 220 13% 28%;
+    --secondary-foreground: 210 20% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 220 13% 28%;
+    --muted-foreground: 214 14% 73%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 220 13% 28%;
+    --accent-foreground: 210 20% 98%;
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --gray-50: 220 13% 22%;
+    --gray-100: 220 13% 28%;
+    --gray-200: 220 13% 36%;
+    --gray-300: 220 9% 46%;
+    --gray-400: 214 11% 58%;
+    --gray-500: 214 14% 73%;
+    --gray-600: 214 16% 87%;
+    --gray-700: 214 20% 92%;
+    --gray-800: 210 20% 96%;
+    --gray-900: 210 20% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --destructive: 0 65% 51%;
+    --destructive-foreground: 210 20% 98%;
+
+    --border: 220 13% 28%;
+    --input: 220 13% 28%;
+    --ring: 39 100% 50%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -100,6 +132,69 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-inter;
+  }
+
+  /* Healthcare VC Tool Custom Styles */
+  .kanban-board {
+    @apply grid gap-6 p-6;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .kanban-column {
+    @apply bg-gray-50 rounded-xl p-4 min-h-[500px];
+  }
+
+  .kanban-card {
+    @apply bg-white rounded-lg p-4 mb-3 shadow-sm border border-gray-200;
+    @apply hover:shadow-md transition-all duration-200;
+    @apply hover:border-primary/20;
+  }
+
+  .filter-pill {
+    @apply px-3 py-1.5 rounded-full text-sm font-medium;
+    @apply bg-gray-100 text-gray-700 hover:bg-gray-200;
+    @apply transition-colors duration-200;
+  }
+
+  .filter-pill.active {
+    @apply bg-primary text-primary-foreground;
+  }
+
+  .source-logo {
+    @apply w-8 h-8 rounded-full object-cover;
+  }
+
+  .theme-tag {
+    @apply px-2 py-1 rounded-md text-xs font-medium;
+    @apply bg-primary-light text-primary border border-primary/20;
+  }
+
+  .article-summary {
+    @apply text-sm text-gray-600 line-clamp-3;
+  }
+
+  /* Animations */
+  .fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hover-lift {
+    @apply transition-transform duration-200;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
   }
 }
