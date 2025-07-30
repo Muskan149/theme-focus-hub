@@ -5,12 +5,26 @@ import { ThemeSidebar } from "@/components/ThemeSidebar";
 import { EmailDigestModal } from "@/components/EmailDigestModal";
 import { sampleArticles, type Article } from "@/data/sampleData";
 
+interface Theme {
+  id: string;
+  name: string;
+  visible: boolean;
+  count: number;
+}
+
+const defaultThemes: Theme[] = [
+  { id: "1", name: "Robotics & Automation", visible: true, count: 12 },
+  { id: "2", name: "Healthcare Customer Experience", visible: true, count: 8 },
+  { id: "3", name: "Others", visible: true, count: 5 },
+];
+
 const Index = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedTheme, setSelectedTheme] = useState<string | null>(null);
   const [selectedDateRange, setSelectedDateRange] = useState("This Week");
   const [sidebarCollapsed, setSidebarCollapsed] = useState(false);
   const [emailDigestOpen, setEmailDigestOpen] = useState(false);
+  const [themes, setThemes] = useState<Theme[]>(defaultThemes);
 
   // Filter articles based on search and filters
   const filteredArticles = useMemo(() => {
@@ -29,13 +43,16 @@ const Index = () => {
 
   // Group filtered articles by theme
   const articlesByTheme = useMemo(() => {
-    const themes = {
-      "Robotics & Automation": filteredArticles.filter(article => article.theme === "Robotics & Automation"),
-      "Healthcare Customer Experience": filteredArticles.filter(article => article.theme === "Healthcare Customer Experience"),
-      "Others": filteredArticles.filter(article => article.theme === "Others")
-    };
-    return themes;
-  }, [filteredArticles]);
+    const themeGroups: { [key: string]: Article[] } = {};
+    
+    themes.forEach(theme => {
+      if (theme.visible) {
+        themeGroups[theme.name] = filteredArticles.filter(article => article.theme === theme.name);
+      }
+    });
+    
+    return themeGroups;
+  }, [filteredArticles, themes]);
 
   const handleSearchChange = (search: string) => {
     setSearchTerm(search);
@@ -55,6 +72,10 @@ const Index = () => {
 
   const handleToggleSidebar = () => {
     setSidebarCollapsed(!sidebarCollapsed);
+  };
+
+  const handleThemeVisibilityChange = (updatedThemes: Theme[]) => {
+    setThemes(updatedThemes);
   };
 
   return (
@@ -92,26 +113,23 @@ const Index = () => {
         <ThemeSidebar
           isCollapsed={sidebarCollapsed}
           onToggleCollapse={handleToggleSidebar}
+          themes={themes}
+          onThemeVisibilityChange={handleThemeVisibilityChange}
         />
 
         {/* Kanban Board */}
         <div className="flex-1 p-6">
           <div className="kanban-board">
-            <KanbanColumn
-              title="Robotics & Automation"
-              articles={articlesByTheme["Robotics & Automation"]}
-              count={articlesByTheme["Robotics & Automation"].length}
-            />
-            <KanbanColumn
-              title="Healthcare Customer Experience"
-              articles={articlesByTheme["Healthcare Customer Experience"]}
-              count={articlesByTheme["Healthcare Customer Experience"].length}
-            />
-            <KanbanColumn
-              title="Others"
-              articles={articlesByTheme["Others"]}
-              count={articlesByTheme["Others"].length}
-            />
+            {themes
+              .filter(theme => theme.visible)
+              .map(theme => (
+                <KanbanColumn
+                  key={theme.id}
+                  title={theme.name}
+                  articles={articlesByTheme[theme.name] || []}
+                  count={(articlesByTheme[theme.name] || []).length}
+                />
+              ))}
           </div>
         </div>
       </div>

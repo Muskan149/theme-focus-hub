@@ -14,6 +14,8 @@ interface Theme {
 interface ThemeSidebarProps {
   isCollapsed: boolean;
   onToggleCollapse: () => void;
+  themes: Theme[];
+  onThemeVisibilityChange: (themes: Theme[]) => void;
 }
 
 const defaultThemes: Theme[] = [
@@ -22,15 +24,15 @@ const defaultThemes: Theme[] = [
   { id: "3", name: "Others", visible: true, count: 5 },
 ];
 
-export const ThemeSidebar = ({ isCollapsed, onToggleCollapse }: ThemeSidebarProps) => {
-  const [themes, setThemes] = useState<Theme[]>(defaultThemes);
+export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVisibilityChange }: ThemeSidebarProps) => {
   const [newThemeName, setNewThemeName] = useState("");
   const [isAddingTheme, setIsAddingTheme] = useState(false);
 
   const toggleThemeVisibility = (id: string) => {
-    setThemes(themes.map(theme => 
+    const updatedThemes = themes.map(theme => 
       theme.id === id ? { ...theme, visible: !theme.visible } : theme
-    ));
+    );
+    onThemeVisibilityChange(updatedThemes);
   };
 
   const addNewTheme = () => {
@@ -41,7 +43,8 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse }: ThemeSidebarProp
         visible: true,
         count: 0
       };
-      setThemes([...themes, newTheme]);
+      const updatedThemes = [...themes, newTheme];
+      onThemeVisibilityChange(updatedThemes);
       setNewThemeName("");
       setIsAddingTheme(false);
     }
