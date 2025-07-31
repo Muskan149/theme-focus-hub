@@ -116,7 +116,7 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
       </div>
 
       {/* Add New Theme */}
-      <div className="border-t border-gray-200 pt-4">
+      {/* <div className="border-t border-gray-200 pt-4">
         {isAddingTheme ? (
           <div className="space-y-2">
             <Input
@@ -160,7 +160,7 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
             Add Theme
           </Button>
         )}
-      </div>
+      </div> */}
 
       {/* Future Features
       <div className="mt-8 space-y-3">
