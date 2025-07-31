@@ -162,7 +162,7 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
         )}
       </div>
 
-      {/* Future Features */}
+      {/* Future Features
       <div className="mt-8 space-y-3">
         <div className="p-3 bg-white rounded-lg border border-gray-200 opacity-60">
           <div className="flex items-center gap-2 mb-1">
@@ -187,7 +187,7 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
           </div>
           <span className="text-xs text-gray-500">Coming Soon</span>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
