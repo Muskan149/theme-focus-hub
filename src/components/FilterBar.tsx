@@ -95,7 +95,7 @@ export const FilterBar = ({
           </Select>
 
           {/* Actions */}
-          <div className="flex gap-2">
+          {/* <div className="flex gap-2">
             <Button
               variant="outline"
               onClick={onEmailDigestClick}
@@ -109,6 +109,7 @@ export const FilterBar = ({
               <Settings size={16} />
             </Button>
           </div>
+          */}
         </div>
 
         {/* Active Filters */}
