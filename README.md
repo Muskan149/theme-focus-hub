@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/864d7442-ca04-41dc-8aac-dfd9f7b8de79
+**URL**: [https://lovable.dev/projects/864d7442-ca04-41dc-8aac-dfd9f7b8de79](https://weekly-theme-tracker-fp8nlcti6-muskan-mahajans-projects.vercel.app/)
 
 ## How can I edit this code?
 
