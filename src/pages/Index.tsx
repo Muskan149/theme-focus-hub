@@ -3,20 +3,15 @@ import { FilterBar } from "@/components/FilterBar";
 import { KanbanColumn } from "@/components/KanbanColumn";
 import { ThemeSidebar } from "@/components/ThemeSidebar";
 import { EmailDigestModal } from "@/components/EmailDigestModal";
-import { sampleArticles, type Article } from "@/data/sampleData";
+import { Theme, Article } from "@/types";
+import { themes } from "../../scripts/prompts.js";
+import { useNewsData } from "@/hooks/useNewsData";
 
-interface Theme {
-  id: string;
-  name: string;
-  visible: boolean;
-  count: number;
-}
-
-const defaultThemes: Theme[] = [
-  { id: "1", name: "Robotics & Automation", visible: true, count: 12 },
-  { id: "2", name: "Healthcare Customer Experience", visible: true, count: 8 },
-  { id: "3", name: "Others", visible: true, count: 5 },
-];
+const defaultThemes: Theme[] = themes.map((theme, index) => ({
+  id: index.toString(),
+  name: theme,
+  visible: true
+}));
 
 const Index = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -26,33 +21,25 @@ const Index = () => {
   const [emailDigestOpen, setEmailDigestOpen] = useState(false);
   const [themes, setThemes] = useState<Theme[]>(defaultThemes);
 
-  // Filter articles based on search and filters
+  const { allArticles, loading, error } = useNewsData();
+  console.log("allArticles: ", allArticles);
+
+  // Filter articles by theme
   const filteredArticles = useMemo(() => {
-    return sampleArticles.filter(article => {
+    let filteredArticles = allArticles.filter((article) => {
       const matchesSearch = !searchTerm || 
         article.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
         article.source.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        article.summary.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        article.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
-
-      const matchesTheme = !selectedTheme || article.theme === selectedTheme;
-
-      return matchesSearch && matchesTheme;
+        article.summary.toLowerCase().includes(searchTerm.toLowerCase());
+      return matchesSearch;
     });
-  }, [searchTerm, selectedTheme]);
 
-  // Group filtered articles by theme
-  const articlesByTheme = useMemo(() => {
-    const themeGroups: { [key: string]: Article[] } = {};
-    
-    themes.forEach(theme => {
-      if (theme.visible) {
-        themeGroups[theme.name] = filteredArticles.filter(article => article.theme === theme.name);
-      }
-    });
-    
-    return themeGroups;
-  }, [filteredArticles, themes]);
+    if (selectedTheme) {
+      filteredArticles = filteredArticles.filter((article) => article.theme === selectedTheme);
+    }
+
+    return filteredArticles;
+  }, [searchTerm, allArticles, selectedTheme]);
 
   const handleSearchChange = (search: string) => {
     setSearchTerm(search);
@@ -122,14 +109,18 @@ const Index = () => {
           <div className="kanban-board">
             {themes
               .filter(theme => theme.visible)
-              .map(theme => (
-                <KanbanColumn
-                  key={theme.id}
-                  title={theme.name}
-                  articles={articlesByTheme[theme.name] || []}
-                  count={(articlesByTheme[theme.name] || []).length}
-                />
-              ))}
+              .map(theme => {
+                // Find the articles for this theme from filteredArticles array
+                const articlesForTheme = filteredArticles.filter((article) => article.theme === theme.name);
+                return (
+                  <KanbanColumn
+                    key={theme.id}
+                    title={theme.name}
+                    articles={articlesForTheme}
+                    count={articlesForTheme.length}
+                  />
+                );
+              })}
           </div>
         </div>
       </div>

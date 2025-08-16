@@ -5,13 +5,14 @@ interface Article {
   title: string;
   source: string;
   sourceLogo?: string;
-  date: string;
+  publicationUrl: string;
+  publicationDate: string;
   summary: string;
   tags: string[];
-  link: string;
   isRead?: boolean;
   isBookmarked?: boolean;
 }
+
 
 interface KanbanColumnProps {
   title: string;
@@ -36,10 +37,10 @@ export const KanbanColumn = ({ title, articles, count }: KanbanColumnProps) => {
             title={article.title}
             source={article.source}
             sourceLogo={article.sourceLogo}
-            date={article.date}
+            publicationDate={article.publicationDate}
             summary={article.summary}
             tags={article.tags}
-            link={article.link}
+            publicationUrl={article.publicationUrl}
             isRead={article.isRead}
             isBookmarked={article.isBookmarked}
           />

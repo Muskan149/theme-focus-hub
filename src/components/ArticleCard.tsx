@@ -6,10 +6,10 @@ interface ArticleCardProps {
   title: string;
   source: string;
   sourceLogo?: string;
-  date: string;
+  publicationUrl: string;
+  publicationDate: string;
   summary: string;
-  tags: string[];
-  link: string;
+  tags?: string[];
   isRead?: boolean;
   isBookmarked?: boolean;
 }
@@ -17,11 +17,11 @@ interface ArticleCardProps {
 export const ArticleCard = ({
   title,
   source,
-  sourceLogo,
-  date,
+  sourceLogo = null,
+  publicationDate,
   summary,
-  tags,
-  link,
+  tags = [],
+  publicationUrl,
   isRead = false,
   isBookmarked = false,
 }: ArticleCardProps) => {
@@ -45,7 +45,7 @@ export const ArticleCard = ({
           )}
           <div>
             <p className="text-sm font-medium text-gray-900">{source}</p>
-            <p className="text-xs text-gray-500">{date}</p>
+            <p className="text-xs text-gray-500">{publicationDate}</p>
           </div>
         </div>
         <div className="flex gap-1">
@@ -92,7 +92,7 @@ export const ArticleCard = ({
         variant="outline"
         size="sm"
         className="w-full justify-center gap-2"
-        onClick={() => window.open(link, '_blank')}
+        onClick={() => window.open(publicationUrl, '_blank')}
       >
         <ExternalLink size={16} />
         Read Article

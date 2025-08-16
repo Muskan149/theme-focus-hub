@@ -137,12 +137,23 @@ Font: Inter for professional, modern feel
 
   /* Healthcare VC Tool Custom Styles */
   .kanban-board {
-    @apply grid gap-6 p-6;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    @apply flex gap-6 p-6 overflow-x-auto;
+    width: 100%;
+    overflow-y: hidden;
+  }
+
+  /* On mobile, the kanban board should be a single column */
+  @media (max-width: 768px) {
+    .kanban-board {
+      grid-template-columns: 1fr;
+    }
   }
 
   .kanban-column {
     @apply bg-gray-50 rounded-xl p-4 min-h-[500px];
+    width: 350px;
+    min-width: 300px;
+    flex-shrink: 0;
   }
 
   .kanban-card {

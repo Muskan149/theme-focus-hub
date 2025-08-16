@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Search, Filter, Mail, Settings } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
   Select,
@@ -10,6 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { themes } from "@/data/newsData";
 
 interface FilterBarProps {
   onSearchChange: (search: string) => void;
@@ -18,19 +19,14 @@ interface FilterBarProps {
   onEmailDigestClick: () => void;
 }
 
-const themes = [
-  "All Themes",
-  "Robotics & Automation", 
-  "Healthcare Customer Experience",
-  "Others"
-];
-
 const dateRanges = [
   "All Time",
   "Today",
   "This Week", 
   "This Month"
 ];
+
+const filterThemes: string[] = [ "All Themes", ...themes];
 
 export const FilterBar = ({ 
   onSearchChange, 
@@ -50,6 +46,7 @@ export const FilterBar = ({
     setSelectedDateRange(range);
     onDateFilter(range);
   };
+
 
   return (
     <div className="bg-white border-b border-gray-200 p-4">
@@ -72,7 +69,7 @@ export const FilterBar = ({
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              {themes.map((theme) => (
+              {filterThemes.map((theme) => (
                 <SelectItem key={theme} value={theme}>
                   {theme}
                 </SelectItem>

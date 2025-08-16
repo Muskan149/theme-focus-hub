@@ -1,15 +1,10 @@
 import { useState } from "react";
 import { ChevronLeft, ChevronRight, Plus, Eye, EyeOff } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-
-interface Theme {
-  id: string;
-  name: string;
-  visible: boolean;
-  count: number;
-}
+import { themes } from "@/data/newsData";
+import { Theme } from "@/types";
 
 interface ThemeSidebarProps {
   isCollapsed: boolean;
@@ -18,36 +13,12 @@ interface ThemeSidebarProps {
   onThemeVisibilityChange: (themes: Theme[]) => void;
 }
 
-const defaultThemes: Theme[] = [
-  { id: "1", name: "Robotics & Automation", visible: true, count: 12 },
-  { id: "2", name: "Healthcare Customer Experience", visible: true, count: 8 },
-  { id: "3", name: "Others", visible: true, count: 5 },
-];
-
 export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVisibilityChange }: ThemeSidebarProps) => {
-  const [newThemeName, setNewThemeName] = useState("");
-  const [isAddingTheme, setIsAddingTheme] = useState(false);
-
   const toggleThemeVisibility = (id: string) => {
     const updatedThemes = themes.map(theme => 
       theme.id === id ? { ...theme, visible: !theme.visible } : theme
     );
     onThemeVisibilityChange(updatedThemes);
-  };
-
-  const addNewTheme = () => {
-    if (newThemeName.trim()) {
-      const newTheme: Theme = {
-        id: Date.now().toString(),
-        name: newThemeName.trim(),
-        visible: true,
-        count: 0
-      };
-      const updatedThemes = [...themes, newTheme];
-      onThemeVisibilityChange(updatedThemes);
-      setNewThemeName("");
-      setIsAddingTheme(false);
-    }
   };
 
   if (isCollapsed) {
@@ -107,7 +78,6 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
                 />
                 <div>
                   <p className="font-medium text-sm text-gray-900">{theme.name}</p>
-                  <p className="text-xs text-gray-500">{theme.count} articles</p>
                 </div>
               </div>
             </div>
