@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Article } from '../types';
-import { fetchArticlesFromSupabase } from "../../scripts/fetch_perplexity_news.js";
+import { supabase } from '../lib/supabaseClient';
 
 
 export function useNewsData() {
@@ -12,9 +12,14 @@ export function useNewsData() {
     async function fetchNewsData() {
       try {
         setLoading(true);
-        // Fetch articles from supabase
-          const rawArticles = await fetchArticlesFromSupabase();
-          console.log("rawArticles: ", rawArticles);
+        // Fetch articles from supabase (read-only via RLS)
+        const { data: rawArticles, error } = await supabase
+          .from('articles')
+          .select('*')
+          .order('updated_at', { ascending: false });
+
+        if (error) throw error;
+        if (!rawArticles) throw new Error('No articles found');
 
         // Transform the data for frontend
           const transformedArticles: Article[] = rawArticles.map((article) => ({
@@ -29,6 +34,7 @@ export function useNewsData() {
             theme: article.theme,
             isRead: article.isRead,
             isBookmarked: article.isBookmarked,
+            uploadedDate: article.uploaded_at,
           }));
 
         setAllArticles(transformedArticles);

@@ -17,4 +17,5 @@ export interface Article {
   theme: string;
   isRead?: boolean;
   isBookmarked?: boolean;
+  uploadedDate: string;
 }

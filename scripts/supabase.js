@@ -1,12 +1,17 @@
 import { createClient } from '@supabase/supabase-js';
-// Use Vite's environment variables (prefixed with VITE_)
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://nqcwwrbrdyxxmecnsvci.supabase.co';
-const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+import dotenv from 'dotenv';
 
-if (!supabaseKey) {
-  console.warn('VITE_SUPABASE_ANON_KEY is not set. Please create a .env file with your Supabase key.');
+// Server-side client for scripts: use service role key from .env (NEVER expose to frontend)
+dotenv.config();
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+
+if (!supabaseUrl || !supabaseServiceRoleKey) {
+  // eslint-disable-next-line no-console
+  console.error('Missing SUPABASE_URL or SUPABASE_SERVICE_ROLE_KEY in environment.');
 }
 
-const supabase = createClient(supabaseUrl, supabaseKey);
+const supabase = createClient(supabaseUrl, supabaseServiceRoleKey);
 
 export { supabase };

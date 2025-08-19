@@ -1,1 +1,342 @@
-[]
+[
+  {
+    "source": "Health IT Answers",
+    "publication_url": "https://www.healthitanswers.net/sharing-health-data-update-august-2025/",
+    "publication_date": "2025-08-18",
+    "summary": "Converge Health's launch as a consultancy dedicated to solving persistent last-mile data exchange gaps in healthcare underscores continued demand for meaningful, real-world interoperability solutions; VC investors should note the focus on actionable results and differentiated expertise in connecting complex systems, potentially leading to market traction among enterprise health providers.",
+    "title": "Converge Health Launches to Bridge the Last Mile of Interoperability in Healthcare",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.508Z"
+  },
+  {
+    "source": "Health IT Answers",
+    "publication_url": "https://www.healthitanswers.net/sharing-health-data-update-august-2025/",
+    "publication_date": "2025-08-18",
+    "summary": "Altera's partnership with Health Gorilla combines a global HIT vendor with a QHIN-certified interoperability platform, enabling structured, AI-ready health data exchange and demonstrating enterprise commitment to scalable, standards-based integration—attractive for VCs seeking investments with practical deployment and regulatory alignment.",
+    "title": "Altera Digital Health and Health Gorilla Announce Strategic Partnership to Accelerate Healthcare Interoperability",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "Health IT Answers",
+    "publication_url": "https://www.healthitanswers.net/sharing-health-data-update-august-2025/",
+    "publication_date": "2025-08-18",
+    "summary": "By migrating all eligible providers to the TEFCA framework, athenahealth sets a new industry standard for secure, nationwide interoperability infrastructure; this move signals not only technical leadership but also the maturity needed for large-scale adoption, establishing defensible market advantage and increasing attractiveness for late-stage VC.",
+    "title": "athenahealth is the First Healthcare IT Company to Implement TEFCA at Scale, Leading the way in Nationwide Interoperability",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "Health IT Answers",
+    "publication_url": "https://www.healthitanswers.net/sharing-health-data-update-august-2025/",
+    "publication_date": "2025-08-18",
+    "summary": "eClinicalWorks' deployment of AI-powered ambient listening at Evolve Psychiatry demonstrates real-world workflow gains from integrated documentation tools; strong proof points like time savings and improved accuracy strengthen the case for scaling such interoperability-enabled solutions across practices—a key factor for VCs monitoring revenue growth and adoption.",
+    "title": "eClinicalWorks and Sunoh.ai Help Evolve Psychiatry Save Over Two Hours Daily on Clinical Documentation",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "STAT News",
+    "publication_url": "https://www.statnews.com/2025/07/30/health-care-tech-companies-promise-cms-make-patient-data-more-accessible/",
+    "publication_date": "2025-07-30",
+    "summary": "Amazon, Apple, Google, OpenAI, Epic, Microsoft, and others pledged to deliver FHIR-enabled and interoperability-focused patient data apps, with coordinated deadlines via CMS's Interoperability Framework; this large-scale, multi-company market alignment signals significant future infrastructure and opportunity for VC-backed startups working on data exchange standards.",
+    "title": "Over 60 Health and Tech Companies Pledge to Accelerate Health Data Sharing in Partnership with CMS",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "AHA News",
+    "publication_url": "https://www.aha.org/news/headline/2025-07-30-cms-announces-new-interoperability-initiative",
+    "publication_date": "2025-07-30",
+    "summary": "CMS's launch of a digital health ecosystem backed by leading tech firms and voluntary criteria for secure EHR data exchange sets a new regulatory bar and incentivizes end-to-end interoperability; VCs should monitor these partnerships for early signals of which platforms and service models will win health system contracts and payer adoption.",
+    "title": "CMS Announces New Interoperability Initiative, Partnering With Amazon, Anthropic, Apple, Google, and OpenAI",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "CMS Newsroom",
+    "publication_url": "https://www.cms.gov/newsroom/press-releases/white-house-tech-leaders-commit-create-patient-centric-healthcare-ecosystem",
+    "publication_date": "2025-07-30",
+    "summary": "Major health and IT companies have publicly committed to building a next-gen, interoperable health data ecosystem under White House guidance, paving the way for VC investment in scalable infrastructure and practical apps that bridge clinical systems—especially as government endorsement accelerates market adoption.",
+    "title": "White House, Tech Leaders Commit to Create Patient-Centric Interoperable Health Ecosystem",
+    "tags": [],
+    "theme": "Connected and Interoperable",
+    "uploadedDate": "2025-08-19T00:31:20.509Z"
+  },
+  {
+    "source": "theportugalnews.com (via crescendo.ai)",
+    "publication_url": "https://www.crescendo.ai/news/ai-in-healthcare-news",
+    "publication_date": "2025-07-20",
+    "summary": "Portuguese startup MedTiles is deploying advanced AI for medical scan analysis, enabling faster and more accurate diagnoses in dermatology, radiology, and pathology. This unlocks clinical ROI by accelerating critical disease identification and has potential for scale across European hospitals, making it highly attractive for healthcare investors seeking diagnostic innovation.[1]",
+    "title": "MedTiles Uses AI to Revolutionize Medical Diagnostics",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "freightwaves.com (via crescendo.ai)",
+    "publication_url": "https://www.crescendo.ai/news/ai-in-healthcare-news",
+    "publication_date": "2025-07-19",
+    "summary": "GHX launched AI-driven predictive tools for supply chain optimization, minimizing shortages and improving hospital logistics. While focused on operations, the ability to leverage real-time data for systemic efficiency creates new value pools for VCs targeting cost-reduction and resilience in healthcare systems.[1]",
+    "title": "GHX Rolls Out New AI Tools for Healthcare Supply Chains",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "news10.com (via crescendo.ai)",
+    "publication_url": "https://www.crescendo.ai/news/ai-in-healthcare-news",
+    "publication_date": "2025-07-18",
+    "summary": "LeggUP has released AI-powered health coach avatars capable of remembering patient interactions to enhance continuity in behavioral health support. This innovation improves data-driven personalization for mental wellness, representing a scalable, ROI-centric model for digital therapeutics investors.[1]",
+    "title": "LeggUP Deploys AI Health Coach Avatars with Memory",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "CIO Bulletin",
+    "publication_url": "https://ciobulletin.com/big-data/healthcare-big-data-analytics-fivefold-growth",
+    "publication_date": "2025-08-15",
+    "summary": "Aisera secured $90 million to deploy AI and Robotic Process Automation in healthcare, targeting predictive analytics and cloud-native platforms for process optimization. The funding signals investor confidence in scalable solutions that translate big data into actionable clinical and operational insights, building new categories in enterprise health tech.[2]",
+    "title": "Aisera Raises $90M for AI and RPA Technology in Healthcare",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "CIO Bulletin",
+    "publication_url": "https://ciobulletin.com/big-data/healthcare-big-data-analytics-fivefold-growth",
+    "publication_date": "2025-08-15",
+    "summary": "Vedanta Aluminium allied with Crave Infotech to implement hyper-automation within healthcare workflows, leveraging integrated data-driven platforms and predictive analytics. This partnership exemplifies how industrial-grade automation tools can unlock efficiencies and drive VC interest in cross-industry health data solutions.[2]",
+    "title": "Vedanta Aluminium and Crave Infotech Partner for Healthcare Hyper-Automation",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "wewillcure.com",
+    "publication_url": "https://wewillcure.com/insights/ai-and-machine-learning/ai-powered-companies-dominate-2025-digital-health-funding",
+    "publication_date": "2025-07-15",
+    "summary": "New Mountain Capital formed Smarter Technologies by merging AI startups with legacy healthcare data and financial companies, aiming to streamline clinical data organization and real-time administrative services. This move demonstrates how strategic roll-ups can create category-defining platforms with deep data utility, appealing to growth and buyout stage investors.[5]",
+    "title": "Smarter Technologies Launched via New Mountain Capital’s Roll-Up of AI & Clinical Data Firms",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "Tech Funding News",
+    "publication_url": "https://techfundingnews.com/why-data-driven-healthcare-solutions-are-the-next-goldmine-for-tech-investors/",
+    "publication_date": "2025-07-22",
+    "summary": "Startups in Pharmacy Benefit Management (PBM) are using advanced analytics to translate prescription drug data into actionable insights for payers and providers, optimizing cost management. This creates new value by enhancing transparency and efficiency, which is a clear draw for VCs targeting data-driven diagnostics and payer innovation.[3]",
+    "title": "PBM Tech Transforms Prescription Data into Actionable Insights for Cost Control",
+    "tags": [],
+    "theme": "Turning Data into Information",
+    "uploadedDate": "2025-08-19T00:31:32.069Z"
+  },
+  {
+    "source": "Ainvest",
+    "publication_url": "https://www.ainvest.com/news/philips-100m-investment-step-localized-supply-chain-ceo-2508/",
+    "publication_date": "2025-08-15",
+    "summary": "Philips has committed over $100 million to expand its U.S. manufacturing and R&D, with a particular focus on AI-enabled ultrasound systems, creating new skilled jobs and building supply chain resilience. This move strengthens competitive differentiation, addresses market fragility, and enhances the company's ability to respond to clinical demand shifts—a key advantage for VC stakeholders eyeing mission-critical healthcare technologies.",
+    "title": "Philips' $100M US Investment a Step Towards Localized Supply Chain, CEO Says",
+    "tags": [],
+    "theme": "Supply Chain",
+    "uploadedDate": "2025-08-19T00:31:52.851Z"
+  },
+  {
+    "source": "NewNex.io",
+    "publication_url": "https://www.newnex.io/blogs/venture-capital/venture-capital-trends-in-2025-navigating-transformation-in-a-dynamic-landscape",
+    "publication_date": "2025-08-10",
+    "summary": "2025 has seen an acceleration of venture investment into robotics and automation for healthcare supply chains, with deep tech innovations outpacing traditional AI for the first time in several quarters. Investors are recognizing robust opportunities in automation, which promises supply chain uptime, cost efficiency, and scalability for healthcare providers—key levers for growth and competitive advantage.",
+    "title": "Deep Tech & Robotics Outpace AI for Supply Chain Investment in 2025",
+    "tags": [],
+    "theme": "Supply Chain",
+    "uploadedDate": "2025-08-19T00:31:52.851Z"
+  },
+  {
+    "source": "JD Supra (White & Case)",
+    "publication_url": "https://www.jdsupra.com/legalnews/life-science-healthcare-private-equity-1931107/",
+    "publication_date": "2025-08-05",
+    "summary": "Q2 2025 saw the FDA and HHS introduce new regulatory incentives for domestic manufacturing and streamlined procurement, shifting market advantage towards companies with U.S.-centric supply chains. For VCs, these changes unlock new value creation pathways, favoring startups and scale-ups that proactively embed regulatory compliance into supply chain design.",
+    "title": "Regulatory Shifts Create Opportunity for Domestic Healthcare Supply Chains",
+    "tags": [],
+    "theme": "Supply Chain",
+    "uploadedDate": "2025-08-19T00:31:52.851Z"
+  },
+  {
+    "source": "NewNex.io",
+    "publication_url": "https://www.newnex.io/blogs/venture-capital/venture-capital-trends-in-2025-navigating-transformation-in-a-dynamic-landscape",
+    "publication_date": "2025-08-10",
+    "summary": "AI-driven logistics and digital health supply chain platforms continue to attract robust funding, reflecting sustained demand for predictive analytics, traceability, and risk mitigation solutions in clinical settings. Companies delivering measurable improvements to supply chain efficiency are capturing market share and attracting VC interest due to their clear differentiation and defensibility.",
+    "title": "Venture Activity Remains Strong in AI-Driven Healthcare Logistics and Supply Chain Platforms",
+    "tags": [],
+    "theme": "Supply Chain",
+    "uploadedDate": "2025-08-19T00:31:52.851Z"
+  },
+  {
+    "source": "MedTech Dive",
+    "publication_url": "https://www.medtechdive.com/news/Medtech-private-financings-summer-heart-devices/757883/",
+    "publication_date": "2025-08-18",
+    "summary": "The summer has delivered a steady stream of nine-figure funding rounds in medtech, driven in part by companies expanding and future-proofing their manufacturing and supply chain capacity. This signals sustained VC appetite for companies unlocking healthcare delivery capacity and managing procurement risks—an ongoing theme in sector-wide investment theses.",
+    "title": "Medtech VC Surge in 2025: Summer Funding Flows Show Continued Appetite for Innovation",
+    "tags": [],
+    "theme": "Supply Chain",
+    "uploadedDate": "2025-08-19T00:31:52.851Z"
+  },
+  {
+    "source": "Robotics & Automation News",
+    "publication_url": "https://roboticsandautomationnews.com/2025/08/06/premier-selects-otsaw-as-preferred-supplier-of-robotics-and-automation-solutions/93567/",
+    "publication_date": "2025-08-06",
+    "summary": "Otsaw, a developer of autonomous mobile service robots for healthcare, secured a national group purchasing agreement with Premier, making its Transcar and Camello+ robots eligible for preferred terms at healthcare organizations nationwide. This strategic milestone validates Otsaw’s US commercialization trajectory and enhances its competitive positioning, signaling emerging demand for AI-driven logistics automation in hospitals and opening potential revenue scaling opportunities for investors.",
+    "title": "Premier selects Otsaw as preferred supplier of robotics and automation solutions",
+    "tags": [],
+    "theme": "Robotics & Automation",
+    "uploadedDate": "2025-08-19T00:32:21.020Z"
+  },
+  {
+    "source": "NVIDIA Newsroom",
+    "publication_url": "https://nvidianews.nvidia.com/news/nvidia-and-ge-healthcare-collaborate-to-advance-the-development-of-autonomous-diagnostic-imaging-with-physical-ai",
+    "publication_date": "2025-08-12",
+    "summary": "GE HealthCare is leveraging NVIDIA’s Isaac for Healthcare simulation platform to accelerate R&D of autonomous imaging systems, particularly X-ray and ultrasound. This major partnership demonstrates scale commitments by corporates to robotics autonomy and could open new competitive arenas in diagnostic automation, signaling a significant white space for startups and investors aiming at physical AI in imaging.",
+    "title": "NVIDIA and GE HealthCare Collaborate to Advance the Development of Autonomous Diagnostic Imaging with Physical AI",
+    "tags": [],
+    "theme": "Robotics & Automation",
+    "uploadedDate": "2025-08-19T00:32:21.020Z"
+  },
+  {
+    "source": "News Medical",
+    "publication_url": "https://www.news-medical.net/news/20250703/Shaping-the-future-of-lab-automation-through-AI-and-robotics.aspx",
+    "publication_date": "2025-07-03",
+    "summary": "Following its recent acquisition by Bruker, Chemspeed is scaling commercialization of modular robotics and AI-driven lab automation platforms for R&D and quality control. The move signals increased consolidation and capital flow in lab automation and strengthens Bruker’s position to partner with or acquire additional digital workflow startups, impacting competitive dynamics for investors scouting laboratory robotics innovation.",
+    "title": "Bruker acquisition of Chemspeed boosts AI-driven lab automation expansion",
+    "tags": [],
+    "theme": "Robotics & Automation",
+    "uploadedDate": "2025-08-19T00:32:21.020Z"
+  },
+  {
+    "source": "MD+DI Online",
+    "publication_url": "https://www.mddionline.com/manufacturing/ai-automation-reshape-manufacturing-medtech-at-md-m-east",
+    "publication_date": "2025-06-01",
+    "summary": "Perimeter Medical Imaging AI was recognized for its B-Series OCT System with ImgAssist AI, offering real-time surgical margin analysis, while Vibrant Gastro gained attention for its Vibrant System, a robotic, app-connected, drug-free capsule for chronic constipation. These product milestones highlight rapid clinical progression and FDA activity, providing investors with evidence of innovation velocity and increasing likelihood of commercial traction in AI-driven healthcare devices.",
+    "title": "Perimeter Medical Imaging and Vibrant Gastro Honored at TAG Awards for MedTech Innovation",
+    "tags": [],
+    "theme": "Robotics & Automation",
+    "uploadedDate": "2025-08-19T00:32:21.020Z"
+  },
+  {
+    "source": "Robotics & Automation Magazine",
+    "publication_url": "https://www.roboticsandautomationmagazine.co.uk/digital-magazines/robotics-automation-august-2025.html",
+    "publication_date": "2025-08-05",
+    "summary": "The August 2025 issue spotlights the rising adoption of collaborative robots (cobots) to empower healthcare workers and improve operational safety, with senior leaders discussing new partnerships, integration challenges, and workforce impacts. For healthcare investors, this signals accelerating market momentum for automation startups and a shifting focus from pure-play robotics to human-robot collaboration platforms.",
+    "title": "Ongoing Investment Surge in Collaborative Healthcare Robotics",
+    "tags": [],
+    "theme": "Robotics & Automation",
+    "uploadedDate": "2025-08-19T00:32:21.020Z"
+  },
+  {
+    "source": "InfoPro Learning",
+    "publication_date": "2025-07-18",
+    "publication_url": "https://www.infoprolearning.com/blog/top-healthcare-training-programs-transforming-workforce-readiness-in-2025/",
+    "summary": "This article spotlights companies deploying AI-enabled skills acceleration, simulation-based clinical training (including VR for ER staff), microlearning compliance modules, and digital leadership pipelines, each demonstrating scalable approaches to upskilling and rapid onboarding. These innovations directly address high-need workforce segments, making them attractive for VC investment seeking measurable ROI through technology-driven capacity building.",
+    "title": "Top Healthcare Training Programs Transforming Workforce Readiness in 2025",
+    "tags": [],
+    "theme": "Learning & Growing",
+    "uploadedDate": "2025-08-19T00:32:32.788Z"
+  },
+  {
+    "source": "HBA.org",
+    "publication_date": "2025-08-14",
+    "publication_url": "https://hbanet.org/news/2025/08/14/strengthening-future-healthcare-workforce-new-hba-foundation-creates-pathways",
+    "summary": "The Healthcare Businesswomen’s Association launched The HBA Foundation, targeting workforce gaps by providing mentoring, educational programs, and professional development for emerging healthcare professionals. Backed by industry partnerships, this effort builds critical infrastructure for career mobility, empowering scale and diversity that can drive long-term retention—key themes for strategic VC investing.",
+    "title": "Strengthening the Future Healthcare Workforce: New HBA Foundation Creates Pathways",
+    "tags": [],
+    "theme": "Learning & Growing",
+    "uploadedDate": "2025-08-19T00:32:32.788Z"
+  },
+  {
+    "source": "National Institute on Aging (NIA)",
+    "publication_date": "2025-04-21",
+    "publication_url": "https://www.nia.nih.gov/research/sbir/startup-challenge",
+    "summary": "Twenty-one early-stage startups were chosen as finalists for NIA’s 2025 Challenge, receiving mentorship, entrepreneurial training, and cash prizes for innovations in health workforce technology. These finalists gain a competitive edge and validation for VC investors focused on workforce solutions for the rapidly growing aging population.",
+    "title": "2025 NIA Start-Up Challenge and Accelerator: Stimulating Aging Innovation",
+    "tags": [],
+    "theme": "Learning & Growing",
+    "uploadedDate": "2025-08-19T00:32:32.788Z"
+  },
+  {
+    "source": "OpenLoop Health",
+    "publication_date": "2024-10-31",
+    "publication_url": "https://openloophealth.com/blog/top-healthcare-conferences-to-attend-in-2025",
+    "summary": "ViVE 2025 will convene digital health startups, investors, and health systems to explore next-gen workforce development, including generative AI for just-in-time training and operational efficiency. Visibility among influential buyers and partners at this conference accelerates startup deal-making and technology adoption, enhancing early-mover advantage for VC-backed companies.",
+    "title": "ViVE 2025 to Spotlight Digital Health Startups and Training Technologies",
+    "tags": [],
+    "theme": "Learning & Growing",
+    "uploadedDate": "2025-08-19T00:32:32.788Z"
+  },
+  {
+    "source": "Columbia Business School",
+    "publication_date": "2023-01-09",
+    "publication_url": "https://courses.business.columbia.edu/B8132",
+    "summary": "The Columbia course highlights investment strategies in digital health, with case studies on high-growth VC-backed platforms like Maven Clinic and Grand Rounds, which focus on upskilling clinical staff and care coordination. Their historic scale validates the investability and future market leadership of workforce-enabling healthcare startups.",
+    "title": "Investing in Digital Health Startups: Lessons from Venture-Backed Growth",
+    "tags": [],
+    "theme": "Learning & Growing",
+    "uploadedDate": "2025-08-19T00:32:32.788Z"
+  },
+  {
+    "source": "Bridge Global",
+    "publication_date": "2025-08-13",
+    "publication_url": "https://www.bridge-global.com/blog/ai-hipaa-compliance-strategies/",
+    "summary": "Bridge Global highlights the importance for healthcare startups of embedding HIPAA-compliant AI governance at the core of their products, including audit trails, minimum necessary data access, and legal oversight. This approach de-risks AI innovations for investors by preemptively addressing regulatory scrutiny and supporting scalable, trusted adoption.",
+    "title": "AI HIPAA Compliance Strategies for Healthcare Startups",
+    "tags": [],
+    "theme": "Safe and Secure AI",
+    "uploadedDate": "2025-08-19T00:32:46.216Z"
+  },
+  {
+    "source": "Becker's Hospital Review",
+    "publication_date": "2025-08-18",
+    "publication_url": "https://www.beckershospitalreview.com/healthcare-information-technology/ai/ama-issues-ai-guidance-for-health-systems/",
+    "summary": "The American Medical Association released an 8-step governance framework for health systems implementing AI, stressing risk management, staff training, and oversight. This enhances investor confidence in startups and vendors aligning with clinical safety, compliance, and trust-building protocols as AI adoption accelerates among providers.",
+    "title": "AMA issues AI guidance for health systems",
+    "tags": [],
+    "theme": "Safe and Secure AI",
+    "uploadedDate": "2025-08-19T00:32:46.216Z"
+  },
+  {
+    "source": "UMN Data Science Initiative",
+    "publication_date": "2025-06-10",
+    "publication_url": "https://dsai-hub.umn.edu/news/ai-spring-summit-2025",
+    "summary": "At the AI Spring Summit 2025, leaders from healthcare and technology sectors convened to discuss practical governance strategies for safe AI adoption. Startups collaborating or participating in such events gain strategic partnerships and credibility, supporting responsible AI integration and competitive positioning in the market.",
+    "title": "AI Spring Summit 2025: AI Governance, Ethics, and Practical Applications",
+    "tags": [],
+    "theme": "Safe and Secure AI",
+    "uploadedDate": "2025-08-19T00:32:46.216Z"
+  },
+  {
+    "source": "NIH/Health and Human Services",
+    "publication_date": "2025-03-01",
+    "publication_url": "https://irp.nih.gov/system/files/media/file/2025-03/2025-hhs-ai-strategic-plan_full_508.pdf",
+    "summary": "HHS's strategic plan emphasizes industry partnerships, robust risk management, and adoption of frameworks like NIST's AI Risk Management for healthcare AI startups and incumbents, especially for device validation and transparency. Alignment with such policies bolsters investor interest by signaling regulatory preparedness and long-term viability.",
+    "title": "Strategic Plan for Use of Artificial Intelligence in Health, Human Services, and Biomedical Research",
+    "tags": [],
+    "theme": "Safe and Secure AI",
+    "uploadedDate": "2025-08-19T00:32:46.216Z"
+  },
+  {
+    "source": "NCBI Bookshelf",
+    "publication_date": "2025-03-28",
+    "publication_url": "https://www.ncbi.nlm.nih.gov/books/NBK613808/",
+    "summary": "Canada’s Drug Agency highlights public and private investments into AI tools with explicit focus on validation, governance, and risks around unsanctioned clinical use. VC interest is being driven toward companies offering monitoring, compliance, and training solutions for clinical AI, helping health providers manage legal and safety risks.",
+    "title": "2025 Watch List: Artificial Intelligence in Health Care",
+    "tags": [],
+    "theme": "Safe and Secure AI",
+    "uploadedDate": "2025-08-19T00:32:46.216Z"
+  }
+]

@@ -1,0 +1,19 @@
+name: Weekly Fetch News
+on:
+  schedule:
+    - cron: "0 12 * * 1"  # 8am ET during EDT (UTC-4)
+    - cron: "0 13 * * 1"  # 8am ET during EST (UTC-5)
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - run: npm ci
+      - run: npm run run:weekly
+        env:
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}

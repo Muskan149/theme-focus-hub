@@ -53,7 +53,7 @@ export const ThemeSidebar = ({ isCollapsed, onToggleCollapse, themes, onThemeVis
     <div className="w-64 bg-gray-50 border-r border-gray-200 p-4">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
-        <h2 className="font-semibold text-gray-800">Themes</h2>
+        <h2 className="font-semibold text-gray-800">Visible Themes</h2>
         <Button
           variant="ghost"
           size="icon"

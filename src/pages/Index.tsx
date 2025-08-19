@@ -6,6 +6,7 @@ import { EmailDigestModal } from "@/components/EmailDigestModal";
 import { Theme, Article } from "@/types";
 import { themes } from "../../scripts/prompts.js";
 import { useNewsData } from "@/hooks/useNewsData";
+import { isoNDaysAgo } from "@/helper/nDaysAgo.js";
 
 const defaultThemes: Theme[] = themes.map((theme, index) => ({
   id: index.toString(),
@@ -40,6 +41,18 @@ const Index = () => {
 
     return filteredArticles;
   }, [searchTerm, allArticles, selectedTheme]);
+
+  // filter articles by date range
+  const filteredArticlesByDateRange = useMemo(() => {
+    if (selectedDateRange.toLowerCase().includes("this week")) {
+      return filteredArticles.filter((article) => article.uploadedDate >= isoNDaysAgo(8));
+    } else if (selectedDateRange.toLowerCase().includes("this month")) {
+      return filteredArticles.filter((article) => article.uploadedDate >= isoNDaysAgo(30));
+    } else {
+      return filteredArticles;
+    }
+  }, [selectedDateRange, filteredArticles]);
+
 
   const handleSearchChange = (search: string) => {
     setSearchTerm(search);

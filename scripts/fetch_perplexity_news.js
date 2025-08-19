@@ -2,12 +2,12 @@
 // npm install openai node-fetch dotenv
 // run with: node fetch_news.js
 
-// import dotenv from "dotenv";
+import dotenv from "dotenv";
 import { themes, prompts } from "./prompts.js";
 import fs from "fs";
 import { supabase } from "./supabase.js";
 
-// dotenv.config();
+dotenv.config();
 
 // Fetch articles related to a theme from Perplexity
 export async function fetchHealthcareInnovationNews(theme) {
@@ -18,7 +18,7 @@ export async function fetchHealthcareInnovationNews(theme) {
     const response = await fetch('https://api.perplexity.ai/chat/completions', {
         method: 'POST',
         headers: {
-          'Authorization': `Bearer ${import.meta.env.VITE_PERPLEXITY_API_KEY}`,
+          'Authorization': `Bearer ${process.env.PERPLEXITY_API_KEY}`,
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
@@ -165,3 +165,27 @@ export async function fetchArticlesFromSupabase() {
   // Test with 2 themes
   // fetchHealthcareInnovationNews("Connected and Interoperable").catch(console.error);
   // fetchHealthcareInnovationNews("Turning Data into Information").catch(console.error);
+
+
+  // fetchAllArticles().then(articles => {
+  //   console.log("Articles fetched from Perplexity successfully: ", articles);
+  //   uploadArticlesToSupabase(articles);
+  //   console.log("Articles uploaded to Supabase successfully");
+  // }).catch(console.error);
+
+  // Run the function weekly 
+  export async function runWeekly() {
+    const articles = await fetchAllArticles();
+    if (articles?.length) {
+      console.log("Articles fetched from Perplexity successfully: ", articles);
+      await uploadArticlesToSupabase(articles);
+      console.log("Articles uploaded to Supabase successfully");
+    } else {
+      console.log("No articles to upload this run.");
+    }
+  }
+
+  // Only run when executed directly: `node fetch_news.mjs`
+if (import.meta && import.meta.url === `file://${process.argv[1]}`) {
+  runWeekly().catch(console.error);
+}
