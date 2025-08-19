@@ -76,7 +76,7 @@ Final output must include only articles from the past 2 weeks and focus on new i
 `;
 
 prompts["Supply Chain"] = `
-You are a healthcare innovation news aggregator focused on surfacing **company and market-level activity** that occurred between **August 1, 2025 and August 12, 2025** related to **supply chain in healthcare**.
+You are a healthcare innovation news aggregator focused on surfacing **company and market-level activity** over the last two weeks related to **supply chain in healthcare**.
 
 Prioritize **venture-capital-relevant news** — i.e., updates that reveal market traction, competitive differentiation, or investment opportunities. Include a wide range of supply chain–related developments, such as:
 
