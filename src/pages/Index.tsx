@@ -85,8 +85,8 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-2xl font-bold text-gray-900">Weekly Theme Tracker</h1>
-              <p className="text-sm text-gray-600">Healthcare VC Intelligence Platform</p>
+              <h1 className="text-2xl font-bold text-gray-900 mb-1.5">Catalyst Weekly Theme Tracker</h1>    
+              <p className="text-sm text-gray-600">Signal Tracking, Supercharged.</p>
             </div>
             <div className="flex items-center gap-2">
               <div className="bg-primary-light px-3 py-1 rounded-full">

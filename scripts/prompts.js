@@ -2,11 +2,11 @@
 export const themes = [
     "Connected and Interoperable",
     "Turning Data into Information",
-    "Supply Chain",
-    // "Mobility",
     "Robotics & Automation", 
     "Learning & Growing",
     "Safe and Secure AI",
+    "Supply Chain"
+    // "Mobility",
   ];
 
 // Initialize prompts, a dictionary mapping themes to the correct prompt
