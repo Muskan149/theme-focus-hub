@@ -6,7 +6,7 @@ import { EmailDigestModal } from "@/components/EmailDigestModal";
 import { Theme, Article } from "@/types";
 import { themes } from "../../scripts/themesAndPrompts.js";
 import { useNewsData } from "@/hooks/useNewsData";
-import { isoNDaysAgo } from "@/helper/nDaysAgo.js";
+import { isoNDaysAgo } from "@/lib/nDaysAgo.js";
 
 const defaultThemes: Theme[] = themes.map((theme, index) => ({
   id: index.toString(),
