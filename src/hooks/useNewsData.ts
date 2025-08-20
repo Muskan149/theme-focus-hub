@@ -16,7 +16,7 @@ export function useNewsData() {
         const { data: rawArticles, error } = await supabase
           .from('articles')
           .select('*')
-          .order('updated_at', { ascending: false });
+          .order('publication_date', { ascending: false });
 
         if (error) throw error;
         if (!rawArticles) throw new Error('No articles found');
