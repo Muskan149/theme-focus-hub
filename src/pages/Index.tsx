@@ -4,7 +4,7 @@ import { KanbanColumn } from "@/components/KanbanColumn";
 import { ThemeSidebar } from "@/components/ThemeSidebar";
 import { EmailDigestModal } from "@/components/EmailDigestModal";
 import { Theme, Article } from "@/types";
-import { themes } from "../../scripts/prompts.js";
+import { themes } from "../../scripts/themesAndPrompts.js";
 import { useNewsData } from "@/hooks/useNewsData";
 import { isoNDaysAgo } from "@/helper/nDaysAgo.js";
 

@@ -3,7 +3,7 @@
 // run with: node fetch_news.js
 
 import dotenv from "dotenv";
-import { themes, prompts } from "./prompts.js";
+import { themes, prompts } from "./themesAndPrompts.js";
 import fs from "fs";
 import { supabase } from "./supabase.js";
 
@@ -145,47 +145,4 @@ export async function fetchArticlesFromSupabase() {
     console.log("Articles fetched from Supabase successfully");
     return data;
   }
-}
-
-// // Export the function and run it
-// export { fetchAllArticles };
-
-// // Run the main function: fetchAllArticles and uploadArticlesToSupabase and fetchArticlesFromSupabase
-// fetchHealthcareInnovationNews("Connected and Interoperable").then(articles => {
-//   console.log("Articles fetched from Perplexity successfully: ", articles);
-//   uploadArticlesToSupabase(articles);
-//   console.log("Articles uploaded to Supabase successfully");
-// }).catch(console.error);
-
-// fetchArticlesFromSupabase().then(articles => {
-//   console.log("Articles fetched from Supabase successfully: ", articles);
-// }).catch(console.error);
-
-
-  // Test with 2 themes
-  // fetchHealthcareInnovationNews("Connected and Interoperable").catch(console.error);
-  // fetchHealthcareInnovationNews("Turning Data into Information").catch(console.error);
-
-
-  // fetchAllArticles().then(articles => {
-  //   console.log("Articles fetched from Perplexity successfully: ", articles);
-  //   uploadArticlesToSupabase(articles);
-  //   console.log("Articles uploaded to Supabase successfully");
-  // }).catch(console.error);
-
-  // Run the function weekly 
-  export async function runWeekly() {
-    const articles = await fetchAllArticles();
-    if (articles?.length) {
-      console.log("Articles fetched from Perplexity successfully: ", articles);
-      await uploadArticlesToSupabase(articles);
-      console.log("Articles uploaded to Supabase successfully");
-    } else {
-      console.log("No articles to upload this run.");
-    }
-  }
-
-  // Only run when executed directly: `node fetch_news.mjs`
-if (import.meta && import.meta.url === `file://${process.argv[1]}`) {
-  runWeekly().catch(console.error);
 }

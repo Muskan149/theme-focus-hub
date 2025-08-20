@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, Filter, Mail, Settings } from "lucide-react";
+import { Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
 // import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,7 +10,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { themes } from "@/data/newsData";
+import { themes } from "../../scripts/themesAndPrompts.js";
 
 interface FilterBarProps {
   onSearchChange: (search: string) => void;

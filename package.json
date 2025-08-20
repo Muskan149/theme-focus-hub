@@ -9,7 +9,7 @@
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
-    "run:weekly": "node scripts/fetch_perplexity_news.js"
+    "run:weekly": "node scripts/runWeekly.js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",

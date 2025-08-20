@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: [https://lovable.dev/projects/864d7442-ca04-41dc-8aac-dfd9f7b8de79](https://weekly-theme-tracker-fp8nlcti6-muskan-mahajans-projects.vercel.app/)
+**URL**: [https://weekly-theme-tracker.vercel.app/](https://weekly-theme-tracker.vercel.app/)
 
 ## How can I edit this code?
 
@@ -10,7 +10,7 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone <https://github.com/Muskan149/theme-focus-hubL>
 
 # Step 2: Navigate to the project directory.
 cd <YOUR_PROJECT_NAME>
@@ -45,15 +45,4 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/864d7442-ca04-41dc-8aac-dfd9f7b8de79) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+- Love
